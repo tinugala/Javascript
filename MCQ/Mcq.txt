@@ -1,0 +1,32 @@
+1. Which operator returns true if the two compared values are not equal?
+A. <>
+B. ~
+C. ==!
+D. !==
+
+2. Which statement is the correct way to create a variable called rate and assign it the value 100?
+A. let rate = 100;
+B. let 100 = rate;
+C. 100 = let rate;
+D. rate = 100;
+
+3. What is the result?
+console.log(typeof ‘42’);
+A. ‘string’
+B. 'value'
+C. 'number'
+D. 'Integer'
+
+4. Which Variable-defining keyword allows its variable to be accessed (as undefined) before the line
+that defines it?
+A. all of them
+B. const
+C. var
+D. Let
+
+5. What will be the result?
+[] == [];
+A. True
+B. undefined
+C. []
+D. False
