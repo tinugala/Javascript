@@ -30,3 +30,121 @@ A. True
 B. undefined
 C. []
 D. False
+
+6. In console.log(), what are console and log respectively?
+A. Object, method
+B. Method, object
+C. Array, method
+D. Variable, method
+
+7. What type of programming language is javascript?
+A. Single-threaded and asynchronous
+B. Multi-threaded and synchronous
+C. Single-threaded and synchronous
+D. Multi-threaded and asynchronous
+
+8. Which of the following is NOT a keyword to declare a variable in Javascript?
+A. let
+B. var
+C. int
+D. const
+
+9. Which of them are relational operators?
+A. > & <=
+B. =
+C. !=
+D. ==
+
+10. Guess the output of the following code 
+    console.log(10 === +"10")
+A. true
+B. false
+C. NaN
+D. 20 
+
+11. What will the value of y be in this code:
+const x = 6 % 2;
+const y = x ? 'One' : 'Two';
+
+A. One
+B. undefined
+C. TRUE
+D. Two
+
+12. When should a conditional statement be used?
+
+A. To reuse sets of statements a lot time
+B. To choose between multiple options .
+C. To group multiple data together
+D. To loop through a group of statements.
+
+13. What would be the result in the console of running this code?
+for (var i = 0; i < 5; i++) {
+console.log(i);
+}
+
+A. 12345
+B. 1234
+C. 01234
+D. 012345
+
+14. Find the problem in the code?
+var x;
+var y = (x = 3 ) ? true : false;
+
+A. The condition in the ternary operator is using assignment operators
+B. variable is defined without initialising
+C. You can't use a assignment in the left-hand side of an ternary
+D. Var keyword is deprecated .
+
+15. What value does this code return?
+let answer = true;
+if (answer === false){return 0;}
+else {return 10;}
+
+A. 10
+B. True
+C. False
+D. 0
+
+16. Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on 50?
+function addTax(total) { return total * 1.05; }
+A. addTax = 50;
+B. return addTax 50;
+C. addTax(50);
+D. addTax 50;
+
+17. What is the result of running this code?
+sum(10, 20);
+diff(10, 20);
+function sum(x, y) { return x + y; }
+let diff = function (x, y) { return x - y; }
+
+A. 30, ReferenceError, 30, -10
+B. 30, ReferenceError
+C. 30, -10
+D. ReferenceError, -10
+
+18.What is the result in the console of running the code shown?
+var start = 1;
+function setEnd() { var end = 10; }
+setEnd();
+console.log(end);
+
+A. 10
+B. 0
+C. ReferenceError
+D. undefined
+
+19. Which choice is a valid example for an arrow function?
+A. (a,b) => c
+B. a, b => {return c;}
+C. a, b => c
+D. { a, b } => c
+
+20. Which statement can take a single expression as input and then look through a number of
+choices until one that matches that value is found?
+A. else
+B. when
+C. if
+D. switch
