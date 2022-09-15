@@ -7,9 +7,37 @@
    Example-2 Input: 7 Output: No
 5. Given the length of three line segments as a, b, and c., Find if they can form a triangle or not? (Students are not expected to take any user input, solve the problem using hardcoded value)
    Example-1 Input: a=7,b=10,c=5 Output: triangle 
-
 6. Write a function that takes two numbers x and y and calculates x^y
 7. Write a function that takes two parameters num and k and returns the value of Binomial Coefficient
 C(num, k)
-Sample input: num = 6, k = 3
-Sample output: 20
+Input: num = 6, k = 3 Output: 20
+8. Given a number n, calculate n! Factorial 3!=3*2*1 
+Example-1: Input: 3, Output: 6
+Example-2: Input: 5, Output: 120
+9. Given an integer n, write a function that returns the count of trailing zeroes in n!.
+Example-1: Input: 5, Output: 1
+10. Given an array of length N, where every element is present twice and only one element is present once. Find the unique element
+Input: N = 5, Array = [3,2,1,2,3], Output: 1
+11. Find the pair of elements in a given array A such that the sum of the pair is equal to N
+Input: A = [10, 20, 10, 40, 50 , 70], N=50 ,Output: 0,2
+12. A subarray of an array is defined as the contiguous cross section of the array.
+Example: [1,2,3] has the following subarrays: [1],[2],[3],[1,2],[2,3].[1,2,3]
+Given an array print all the subarrays of the given array
+Example-1 Input: [1,2,3] Output: [1],[2],[3],[1,2],[2,3].[1,2,3]
+13. You have an array of n elements. Your job is to find the element that is in majority.
+Any element whose count is greater than n/2 will be considered as a majority element.
+Example-1: Input: [3,1,3,3,2] Output: 3
+14. Find the intersection of two sorted arrays. OR in other words, Given 2 sorted arrays, find all the  elements which occur in both the arrays. 
+Input: A: [1 2 3 3 4 5 6] B: [3 3 5]  Output: [3 3 5] 
+15. Given an array A of N non-negative numbers and you are also given non-negative number B. You  need to find the number of subarrays in A having sum less than B. Assuming no overflow.
+Input: A = [2, 5, 6] , B=10  Output: 4 
+16. Given an array of integers A count the pairs (A[i], A[j]) such that the following conditions are met:
+LCM(A[i],A[j]) = 2GCD(A[i],A[j]) where i,j are from 1 to N(both inclusive)
+(A[i],A[j]) = A[j],A[i];
+Input: [2,3,4] Output: 1
+17. Given a grid of size NxM, K cells have plants while remaining have weeds. Your job is to lay fence on the grid such that the following conditions are met:
+If adjacent cells are plants no need to put fence between them
+If adjacent cell is of weed, then put a fence
+Note: Cells are said to be adjacent if they share the same boundary.
+And building of fences can happen on cell boundaries.So now the total length of constructed fence will be calculated as count of pairs of the side adjacent cells such that there is a fence built on there common side on sides of cells. On the grid boundary.Which have fences built on them. Find the minimum required length of the total length of fences that needs to be built.
+Input: n = 4; m = 4; k = 1; arr = [[1,1]]; Output: 20 4

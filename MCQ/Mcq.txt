@@ -148,3 +148,221 @@ A. else
 B. when
 C. if
 D. switch
+
+21. You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?
+function addNumbers(x, y) {if (isNaN(x) || isNaN(y)) {} }
+A. exception('One or both parameters are not numbers')
+B. catch('One or both parameters are not numbers')
+C. error('One or both parameters are not numbers')
+D. throw('One or both parameters are not numbers')
+
+22. What type of scope does the end variable have in the code shown?
+var start = 1;
+if (start === 1) {
+let end = 2;
+}
+A. conditional
+B. block
+C. global
+D. function
+
+23. Which JavaScript loop ensures that at least a singular iteration will happen?
+A. do...while
+B. forEach
+C. while
+D. for
+
+24. What does this code print to the console?
+let rainForestAcres = 10;
+let animals = 0;
+while (rainForestAcres < 13 || animals <= 2) {
+rainForestAcres++;
+animals += 2;}
+console.log(animals);
+A. 2
+B. 4
+C. 6
+D. 8
+
+25. How would you reference the text 'avenue' in the code shown?
+let roadTypes = ['street', 'road', 'avenue', 'circle'];
+A. roadTypes.2
+B. roadTypes[3]
+C. roadTypes.3
+D. roadTypes[2]
+
+26. What will be logged to the console?
+var a = ['dog', 'cat', 'hen'];
+a[100] = 'fox';
+console.log(a.length);
+A. 101
+B. 3
+C. 4
+D. 100
+
+27. What will this code log to the console?
+const foo = [1, 2, 3];
+const [n] = foo;
+console.log(n);
+A. 1
+B. undefined
+C. NaN
+D. Nothing--this is not proper JavaScript syntax and will throw an error.
+
+28. What will this code print?
+let rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];
+rainForests.splice(0, 2);
+console.log(rainForests);
+A. ["Amazon","Borneo","Cerrado","Congo"]
+B. ["Cerrado", "Congo"]
+C. ["Congo"]
+D. ["Amazon","Borneo"]
+
+29. Which line could you add to this code to print "jaguar" to the console?
+let animals = ['jaguar', 'eagle'];
+//Missing Line
+console.log(  );
+A. animals.filter(e => e === "jaguar");
+B. animals.reverse();
+C. animals.shift();
+D. animals.pop();
+
+
+30. How does any function can create closure?
+A. Value changes whenever the document reloads
+B. A reference is returned to a parent scopes
+C. Doesn't return anything
+D. None of the above
+
+31. Which concept does this code illustrate?
+function makeAdder(x) {
+    return function (y) {
+                return x + y;};
+}
+var addFive = makeAdder(5);
+console.log(addFive(3));
+A. overloading
+B. closure
+C. currying
+D. overriding
+
+32. Which statement represents the starting code converted to an IIFE?
+A. function() { console.log('lorem ipsum'); }()();
+B. function() { console.log('lorem ipsum'); }();
+C. (function() { console.log('lorem ipsum'); })();
+D. None of these
+
+33. What will this code print?
+var x = 1
+var x1 = function () { console.log(x); };
+var y2 = function () { var x = 2; x1(); };
+y2();
+A. 1
+B. 2
+C. error
+D. undefined
+
+34. What will be the output?
+var x = [ 1, 2, 3, 4, 5, 6, 7 ]
+const f = (arr) => {
+return arr.map((x) => x + 3).filter((x) => x < 7);
+};
+console.log(f(x));
+A. [4,5,6,7,8,9,10]
+B. [4,5,6,7]
+C. [1,2,3,4,5,6]
+D. [4,5,6]
+
+
+35. What does this code do? 
+const animals = ['Rabbit', 'Dog', 'Cat']; 
+animals.unshift('Alligator'); 
+A. It adds "Alligator" to the start of the animals array. 
+B. It adds "Alligator" to the end of the animals array. 
+C. It replaces "Rabbit" with "Alligator" in the animals array. 
+D. It replaces "Cat" with "Alligator" in the animals array. 
+
+36. Which statement prints "roar" to the console? 
+var sound = 'grunt'; 
+var bear = { 
+ sound: 'roar', 
+}; 
+function roar() { 
+ console.log(this.sound); 
+} 
+A. bear.bind(roar); 
+B. roar.bind(bear); 
+C. roar.apply(bear); 
+D. bear[roar](); 
+
+37. Which code would you use to access the Irish flag? 
+
+var flagsJSON =
+'{ "countries" : [' +
+'{ "country":"Ireland" , "flag":"orange and green" },' +
+'{ "country":"Serbia" , "flag":"red and blue" },' +
+'{ "country":"Peru" , "flag":"red and white" } ]}';
+var flagDatabase = JSON.parse(flagsJSON);
+
+A. flagDatabase.countries[0].flag 
+B. flagDatabase.countries[1].flag 
+C. flagsJSON.countries[0].flag 
+D. flagDatabase[1].flag 
+
+38. What is the output? 
+const arr1 = [2, 4, 6]; 
+const arr2 = [3, 5, 7]; 
+console.log([...arr1, ...arr2]); 
+A. [3,5,7,2,4,6] 
+B. [3, 5, 7, 2, 4, 6] 
+C. [[2, 4, 6], [3, 5, 7]] 
+D. [2, 4, 6, 3, 5, 7] 
+
+39. Which choice is not an array method? 
+A. array.slice() 
+B. array.shift() 
+C. array.push() 
+D. array.replace() 
+
+40. What is JavaScript?
+A. JavaScript is a scripting language used to make the website interactive
+B. JavaScript is an assembly language used to make the website interactive
+C. JavaScript is a compiled language used to make the website interactive
+D. None of the mentioned.
+
+41. What will this code log to the console?
+const myNumbers = [1, 2, 3, 4, 5, 6, 7];
+const myFunction = (arr) => {
+return arr.map((x) => x + 3).filter((x) => x < 7);};
+console.log(myFunction(myNumbers));
+A. [4,5,6,7,8,9,10]
+B. [4,5,6,7]
+C. [1,2,3,4,5,6]
+D. [4,5,6]
+
+42. What will this code log to the console?
+const foo = [1, 2, 3]; const [n] = foo; console.log(n);
+A. undefined
+B. 1
+C. NaN
+D. Nothing. This is not proper JavaScript syntax and will throw an error.
+
+43. Which statement creates a new object using the Person constructor? Which statement creates a
+new Person object called "student"?
+A. var student = new Person();
+B. var student = construct Person;
+C. var student = Person();
+D. var student = construct Person();
+
+44. Which method converts JSON data to a JavaScript object?
+A. JSON.fromString();
+B. JSON.parse()
+C. JSON.toObject()
+D. JSON.stringify()
+
+45. Which Object method returns an iterable that can be used to iterate over the properties of an
+object?
+A. Object.get()
+B. Object.loop()
+C. Object.each()
+D. Object.keys()
