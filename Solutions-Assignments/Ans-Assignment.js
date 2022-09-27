@@ -314,5 +314,91 @@ function sumOfPair(nums, target_num) {
    return indexes;
    }
    console.log(sumOfPair([10,20,10,40,50,60,70],50));
+
+   // binary search 
+   let binarySearch = function (arr, findNumber, start, end) {
+    if (start > end) return;
+ 
+    let mid = Math.floor((start + end) / 2);
+ 
+    if ((arr[mid] + arr[mid -1] === findNumber) || (arr[mid] + arr[mid +1] === findNumber)) {
+        if ((arr[mid] + arr[mid -1] === findNumber)) {
+            return [arr[mid], arr[mid-1]];
+        }
+        else {
+            return [arr[mid], arr[mid+1]];
+        }
+    }
+ 
+    if ((arr[mid] + arr[mid -1] > findNumber) || (arr[mid] + arr[mid +1] > findNumber)) {
+      return binarySearch(arr, findNumber, start, mid - 1);
+    } else {
+      return binarySearch(arr, findNumber, mid + 1, end);
+    }
+  };
+ 
+  let arr = [1, 3, 4, 5, 7, 10, 11, 12];
+  let findNumber = 4;
+ 
+  console.log(binarySearch(arr, findNumber, 0, arr.length - 1).join(' '));
+
+
 */
 /* */
+// function sumOfPair(nums, target_num) {
+//    var map = [];
+//    var indexes = [] ;
+//    for (var idx = 0; idx < nums.length; idx++)
+//    {
+//    if (map[nums[idx]] != null)
+//    {
+//    var index = map[nums[idx]];
+//    indexes[0] = index;
+//    indexes[1] = idx;
+//    break;
+//    }
+//    else
+//    {
+//    map[target_num - nums[idx]] = idx;
+//    }
+//    }
+//    return indexes;
+//    }
+//    console.log( "this is ans " + sumOfPair([10,20,10,40,50,60,70],130) );
+
+/*
+let [m, n] = readline().split(" ").map(x => parseInt(x));
+let accounts = [];
+for(let i = 0; i < m; i++){
+    let arr = readline().split(" ").map(x => parseInt(x)).slice(0, n);
+    accounts.push(arr);
+}
+
+function wealthyCustomer(accounts, m, n)
+{
+    //write your logic here
+	let richestCustomer = 0;
+  
+  	for (let account in accounts) {
+		const personAccount = accounts[account];
+		let accountSum = 0;
+		for(let i=0; i<personAccount.length; i++) {
+			accountSum += personAccount[i];
+		}
+		if(accountSum > richestCustomer) {
+		richestCustomer = accountSum;
+		}
+  	} 
+  return richestCustomer;
+}
+
+console.log(wealthyCustomer(accounts, m, n))
+----
+let [m, n] = readline().split(" ").map(x => parseInt(x));
+let accounts = [];
+for(let i = 0; i < m; i++){
+   let arr = readline().split(" ").map(x => parseInt(x)).slice(0, n);
+   accounts.push(arr);
+}
+console.log(accounts)
+*/
