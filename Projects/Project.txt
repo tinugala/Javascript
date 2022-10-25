@@ -1,1 +1,5 @@
+Refer to JavaScript projects in  github
 1. Text to File 
+2. Word Scramble Game
+3. Custom Video Player
+4. Dynamic Calendar 
