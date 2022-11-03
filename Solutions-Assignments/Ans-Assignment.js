@@ -1,15 +1,13 @@
 // console.log("hello world");
 /* 1. Write a program to create a Mathematical calculation table from 0 to given number n. */
-/*
- function table(x,y){
+/*function table(x,y){
      for(i=0;i<=y;i++){console.log(`${x} * ${i} = ${x*i}`)}
  }
- table(5,10)
- */
+table(5,10)
+*/
 
 /* 2. Write a program to find the square of given number from 0 to n. */
-/*
-function square(n){
+/*function square(n){
     for(i=1;i<=n;i++){console.log(`Square of ${i} is ${i*i} `)}
 }
 square(10)
@@ -18,8 +16,7 @@ square(10)
 /* 3. 1. Create a basic calculator program using Javascript
       2. Use different arithmetic operators and variables to show working of calculator */
 
-/*
-let num1 = parseFloat(prompt('Enter num1: '));
+/*let num1 = parseFloat(prompt('Enter num1: '));
 let num2 = parseFloat(prompt('Enter num2: '));
 const operation = prompt('Select the operator in prompt (+, - , * , /): ');
 let result;
@@ -34,19 +31,17 @@ console.log(`${num1} ${operation} ${num2} = ${result}`);
    Example-1 Input: 8 Output: Yes
    Example-2 Input: 7 Output: No */
 
-/*   function verify(n)
-   {
+/*function verify(n){
    return (n <= 2 ? false : (n % 2 == 0 ? true : false));
-   }
-   let n = 7;
-   console.log((verify(n) ? "YES" : "NO"));
+  }
+let n = 7;
+console.log((verify(n) ? "YES" : "NO"));
 */ 
+
 /* 5. Given the length of three line segments as a, b, and c., Find if they can form a triangle or not? (Students are not expected to take any user input, solve the problem using hardcoded value)
 Example-1 Input: a=7,b=10,c=5 Output: triangle  */
 
-/*
-  function checkIfTriangle(a, b, c)
-   {
+/*function checkIfTriangle(a, b, c){
    if ( b + c <= a || a + c <= b || a + b <= c ) return false;
    else return true;
    }
@@ -55,13 +50,12 @@ Example-1 Input: a=7,b=10,c=5 Output: triangle  */
    console.log("Triangle");
    else
    console.log("Not Triangle");
-*/
 // checkIfTriangle(70,7,7)
+*/
 
 /* 6. Write a function that takes two numbers x and y and calculates x^y */
 
-/* 
-function pow(x,y){ ans = Math.pow(x,y); console.log(ans) }
+/* function pow(x,y){ ans = Math.pow(x,y); console.log(ans) }
 pow(2,3)
 function XpowY(x, y)
 {
@@ -81,8 +75,7 @@ Sample input: num = 6, k = 3
 Sample output: 20
 Binomial Coefficient (n,k) = n! /k!(n-k)!       */
 
-/*
-function binomialCoefficient(num , k)
+/*function binomialCoefficient(num , k)
 {
 if (k > num) return 0;
 if (k == 0 || k == num) return 1;
@@ -91,12 +84,12 @@ return binomialCoefficient(num - 1, k - 1) + binomialCoefficient (num - 1, k);
 var num = 6, k = 3;
 console.log(`Value of C(${num},${k}) is `+ binomialCoefficient(num, k));
 */
+
 /* 8. Given a number n, calculate n! Factorial 3!=3*2*1 
 Example-1: Input: 3, Output: 6
 Example-2: Input: 5, Output: 120       */
 
-/*
-function factorial(n) {
+/*function factorial(n) {
    if (n == 0) return 1;
    return n * factorial(n - 1);
    }
@@ -107,8 +100,7 @@ function factorial(n) {
 /* 9. Given an integer n, write a function that returns the count of trailing zeroes in n!.
 Example-1: Input: 5, Output: 1      */
 
-/*
-function findTrailingZeros(n){
+/*function findTrailingZeros(n){
 if(n < 0)
 return -1;
 let count = 0;
@@ -124,8 +116,7 @@ console.log("Count of trailing 0s in " + 100 + " is " + findTrailingZeros(n))
 Input: N = 5, Array = [3,2,1,2,3], Output: 1
  */
 
-/* 
-function findSingle(arr, N) {
+/* function findSingle(arr, N) {
    // Do XOR of all elements and return
    let res = arr[0];
    for (let i = 1; i < N; i++)
@@ -141,8 +132,7 @@ console.log("Element occurring once is " + findSingle(Array, N));
 Input: A = [10, 20, 10, 40, 50 , 70], N=50 ,Output: 2,3
  */
 
-/*
-function sumOfPair(num, target_num) {
+/* function sumOfPair(num, target_num) {
    var map = [];
    var indexes = [];
    for (var idx = 0; idx < num.length; idx++){
@@ -163,8 +153,7 @@ Example: [1,2,3] has the following subarrays: [1],[2],[3],[1,2],[2,3].[1,2,3]
 Given an array print all the subarrays of the given array
 Example-1 Input: [1,2,3] Output: [1],[2],[3],[1,2],[2,3].[1,2,3] */
 
-/*
-//solution:1
+/* //solution:1
 function subArray(n) {
    for (let i = 0; i < n; i++) {
       for (let j = i; j < n; j++) {
@@ -187,14 +176,11 @@ for (let i = 0; i <= array.length; i++) {
 }
 */
 
-
-
 /* 13. You have an array of n elements. Your job is to find the element that is in majority.
 Any element whose count is greater than n/2 will be considered as a majority element.
 Example-1: Input: [3,1,3,3,2] Output: 3       */
 
-/*
-function findMajority(arr, n){
+/*function findMajority(arr, n){
    let maxCount = 0;
    let index = -1;
    for(let i = 0; i < n; i++){
@@ -223,8 +209,7 @@ findMajority(arr, n);
 /*14. Find the intersection of two sorted arrays. OR in other words, Given 2 sorted arrays, find all the  elements which occur in both the arrays. 
 Input: A: [1 2 3 3 4 5 6] B: [3 3 5]  Output: [3 3 5] */
 
-/* 
-function printIntersection(arr1, arr2, m, n) {
+/*function printIntersection(arr1, arr2, m, n) {
    var i = 0,j = 0;
       while (i < m && j < n) {
          if (arr1[i] < arr2[j]) i++;
@@ -241,6 +226,7 @@ var m = arr1.length;
 var n = arr2.length;
 printIntersection(arr1, arr2, m, n);
 */
+
 /*15. Given an array A of N non-negative numbers and you are also given non-negative number B. You  need to find the number of subarrays in A having sum less than B. Assuming no overflow.
 Input: A = [2, 5, 6] , B=10  Output: 4  */
 
@@ -273,8 +259,7 @@ LCM(A[i],A[j]) = 2GCD(A[i],A[j]) where i,j are from 1 to N(both inclusive)
 (A[i],A[j]) = A[j],A[i];
 Input: [2,3,4] Output: 1 */
 
-/* wrong
-function findSingle(arr, N) {
+/* wrong function findSingle(arr, N) {
    // Do XOR of all elements and return
    let res = arr[0];
    for (let i = 1; i < N; i++)
@@ -293,8 +278,7 @@ Note: Cells are said to be adjacent if they share the same boundary.
 And building of fences can happen on cell boundaries.So now the total length of constructed fence will be calculated as count of pairs of the side adjacent cells such that there is a fence built on there common side on sides of cells. On the grid boundary.Which have fences built on them. Find the minimum required length of the total length of fences that needs to be built.
 Input: n = 4; m = 4; k = 1; arr = [[1,1]]; Output: 20 4 */
 
-/*
-function sumOfPair(nums, target_num) {
+/*function sumOfPair(nums, target_num) {
    var map = [];
    var indexes = [];
    for (var idx = 0; idx < nums.length; idx++)
@@ -366,39 +350,5 @@ function sumOfPair(nums, target_num) {
 //    }
 //    console.log( "this is ans " + sumOfPair([10,20,10,40,50,60,70],130) );
 
-/*
-let [m, n] = readline().split(" ").map(x => parseInt(x));
-let accounts = [];
-for(let i = 0; i < m; i++){
-    let arr = readline().split(" ").map(x => parseInt(x)).slice(0, n);
-    accounts.push(arr);
-}
 
-function wealthyCustomer(accounts, m, n)
-{
-    //write your logic here
-	let richestCustomer = 0;
-  
-  	for (let account in accounts) {
-		const personAccount = accounts[account];
-		let accountSum = 0;
-		for(let i=0; i<personAccount.length; i++) {
-			accountSum += personAccount[i];
-		}
-		if(accountSum > richestCustomer) {
-		richestCustomer = accountSum;
-		}
-  	} 
-  return richestCustomer;
-}
 
-console.log(wealthyCustomer(accounts, m, n))
-----
-let [m, n] = readline().split(" ").map(x => parseInt(x));
-let accounts = [];
-for(let i = 0; i < m; i++){
-   let arr = readline().split(" ").map(x => parseInt(x)).slice(0, n);
-   accounts.push(arr);
-}
-console.log(accounts)
-*/
